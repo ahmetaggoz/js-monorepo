@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: "Poppins", sans-serif; }
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: url("/images/hero-bg.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(17px);
+  --webkit-backdrop-filter: blur(17px);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  transition: width .3s ease; }
+  .sidebar:hover {
+    width: 260px; }
+    .sidebar:hover .links h4 {
+      display: block; }
+    .sidebar:hover .links hr {
+      border-color: transparent; }
+    .sidebar:hover .links li a {
+      display: block; }
+    .sidebar:hover .logo h2 {
+      display: block; }
+  .sidebar .logo {
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px; }
+    .sidebar .logo h2 {
+      display: none;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-left: 15px; }
+    .sidebar .logo img {
+      width: 43px;
+      border-radius: 50%; }
+  .sidebar .links {
+    height: calc(100% - 140px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    list-style: none;
+    margin-top: 20px; }
+    .sidebar .links::-webkit-scrollbar {
+      display: none; }
+    .sidebar .links hr {
+      border-color: #4c4c4c;
+      margin: 10px 8px; }
+    .sidebar .links li {
+      display: flex;
+      align-items: center; }
+      .sidebar .links li:hover {
+        border-radius: 4px;
+        cursor: pointer;
+        background: #fff; }
+      .sidebar .links li span {
+        padding: 12px 10px; }
+      .sidebar .links li a {
+        color: #000;
+        padding: 10px;
+        font-weight: 500;
+        white-space: nowrap;
+        text-decoration: none;
+        display: none; }
+    .sidebar .links h4 {
+      display: none;
+      color: #222;
+      font-weight: 500;
+      margin-bottom: 10px; }
